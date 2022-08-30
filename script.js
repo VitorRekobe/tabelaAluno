@@ -31,9 +31,7 @@ function calculate() {
             document.getElementById(`status${aluno}`).innerText = "Reprovado";
             document.getElementById(`status${aluno}`).style.backgroundColor = 'red';
         }
-
     }
-
 }
 
 function adicionar() {
