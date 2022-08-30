@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+
+</head>
+<table id="table" class="table table-responsive">
+    <thead>
+        <tr id="gerarNota">
+            <th>Nome</th>
+            <th>Nota</th>
+            <th>Média</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<button onclick="adicionar()" class="botao1">Adicionar Aluno</button>
+<button onclick="calculate()">Calcular</button>
+<button onclick="coluna()">Adicionar Nota</button>
+<button onclick="remove()">Remover Nota</button>
+<button onclick="removeRow()">Remover Aluno</button><br><br>
+<label class="sla">Media da sala: <output placeholder="MEDIA DA SALA" id="mediaGeral"></output></label>
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>
