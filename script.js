@@ -1,7 +1,7 @@
 var tabela = document.getElementById('table');
 var qtdAluno = tabela.getElementsByTagName('tr');
 var row1 = document.getElementById("gerarNota");
-var qtdNota = 1;
+var qtdNota = 4;
 var row;
 
 function calculate() {
