@@ -112,6 +112,8 @@ function remove() {
 }
 
 function removeRow() {
-    let peguei = qtdAluno.length - 1;
-    tabela.deleteRow(peguei)
+    if(qtdAluno.length > 1){
+        let peguei = qtdAluno.length - 1;
+        tabela.deleteRow(peguei)
+    }
 }
