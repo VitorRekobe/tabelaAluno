@@ -18,7 +18,7 @@ function calculate() {
         let mediaTemp = ((notaSoma) / qtdNota);
         mediaSoma = (mediaSoma + mediaTemp);
 
-        var mediaGeral = (mediaSoma / (qtdAluno.length - 1));
+        var mediaGeral = (mediaSoma / (qtdAluno.length - 1)).toFixed(2);
         document.getElementById("mediaGeral").innerText = mediaGeral;
         document.getElementById(`media${aluno}`).innerText = mediaTemp;
         if (mediaTemp >= 50) {
