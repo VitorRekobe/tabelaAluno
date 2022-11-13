@@ -1,8 +1,8 @@
 # Tabela de alunos
 projeto desenvolvido no Senai Suiço Brasileiro
 <br>
-Link do Git Pages, caso queira testa-lo:
-<br>
+Link do Git Pages, caso queira testa-lo: https://vitorrekobe.github.io/tabelaAluno/
+<br><br>
 ![image](https://user-images.githubusercontent.com/98287250/201530818-e8f068f3-ac2c-4226-ade3-88b55d5e51bd.png)
 
 ## Como o proprio nome diz é uma tabela referente a alunos, então o que ela faz? 
