@@ -10,30 +10,34 @@
     <link rel="icon" type="imagem/png" href="logo.png" />
 
 </head>
-<table id="table" class="table table-responsive">
-    <thead>
-        <tr id="gerarNota">
-            <th>Nome</th>
-            <th>Nota</th>
-            <th>Nota</th>
-            <th>Nota</th>
-            <th>Nota</th>
-            <th>Média</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
 
-<button onclick="adicionar()" class="botao1">Adicionar Aluno</button>
-<button onclick="calculate()">Calcular</button>
-<button onclick="coluna()">Adicionar Nota</button>
-<button onclick="remove()">Remover Nota</button>
-<button onclick="removeRow()">Remover Aluno</button><br><br>
-<label class="sla">Media da sala: <output placeholder="MEDIA DA SALA" id="mediaGeral"></output></label>
-
-<script src="./script.js"></script>
+<body>
+    <div id="overflow">
+        <table id="table" class="table table-responsive">
+            <thead>
+                <tr id="gerarNota">
+                    <th>Nome</th>
+                    <th>Nota</th>
+                    <th>Nota</th>
+                    <th>Nota</th>
+                    <th>Nota</th>
+                    <th>Média</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="buttons">
+        <button onclick="adicionar()" class="botao1">Adicionar Aluno</button>
+        <button onclick="calculate()">Calcular</button>
+        <button onclick="coluna()">Adicionar Nota</button>
+        <button onclick="remove()">Remover Nota</button>
+        <button onclick="removeRow()">Remover Aluno</button>
+        <label class="mediaSala">Media da sala: <output placeholder="MEDIA DA SALA" id="mediaGeral"></output></label>
+    </div>
+    <script src="./script.js"></script>
 
 </body>
 
