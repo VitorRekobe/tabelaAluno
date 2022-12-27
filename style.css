@@ -8,19 +8,26 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* Base da tabela */
-table {
-  max-width: 100%;
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font-family: arial;
+#overflow {
+  overflow-x: auto;
 }
 
-.table {
+#buttons {
+  width: 95%;
+  margin: auto;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+table {
+  border-spacing: 0;
+  font-family: arial;
   border-bottom: #d0d5d8 solid 1px;
-  width: 100%;
   margin-bottom: 20px;
+  width: 100vw;
 }
 
 .table th,
@@ -43,7 +50,7 @@ table {
 
 .table thead th {
   font-weight: normal;
-  background-color: #a30000;
+  background-color: red;
   color: #fff;
   font-size: 22px;
   text-align: center;
@@ -54,71 +61,6 @@ table {
   background-color: #f8f8f8;
 }
 
-/* Tornando a tabela responsiva*/
-
-/* para resoluções de até 767px */
-@media (max-width: 767px) {
-
-  /* Tabela responsiva */
-  .table-responsive {
-    display: block;
-    position: relative;
-    width: 100%;
-  }
-
-  /*  Tabela funcionando como um bloco  */
-  .table-responsive thead,
-  .table-responsive tbody,
-  .table-responsive th,
-  .table-responsive td,
-  .table-responsive tr {
-    display: block;
-  }
-
-  /* Defino um tamanho para as células */
-  .table-responsive td,
-  .table-responsive th {
-    height: 35px;
-  }
-
-  .table thead th {
-    font-size: 16px;
-  }
-
-  .table th,
-  .table td {
-    font-size: 12px;
-    padding: 8px;
-  }
-
-  /* thead é “flotado” esquerda para auxiliar na responsividade */
-  .table-responsive thead {
-    float: left;
-  }
-
-  .table-responsive tbody {
-    width: auto;
-    position: relative;
-
-    overflow-x: auto;
-    /* scroll horizontal */
-    -webkit-overflow-scrolling: touch;
-    /* Funcionamento para dispositivos touch */
-    white-space: nowrap;
-  }
-
-  /*  Posicionando linhas lado-a-lado  */
-  .table-responsive tbody tr {
-    display: inline-block;
-  }
-
-  .table td:last-child {
-    border-right: #d0d5d8 solid 1px;
-  }
-
-}
-
-/* From uiverse.io */
 button {
   padding: 1.3em 3em;
   font-size: 12px;
@@ -126,17 +68,16 @@ button {
   border-radius: 20px;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  background-color: white;
   border: none;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.267);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
 
 button:hover {
-  background-color: #c42323;
+  background-color: red;
   box-shadow: 0px 15px 20px rgba(158, 0, 0, 0.4);
   color: #fff;
   transform: translateY(-7px);
@@ -146,24 +87,36 @@ button:active {
   transform: translateY(-1px);
 }
 
-.botao1{
-  margin-left: 2%;
-}
-
-.sla {
-  border-radius: 20px;
-
-  padding: 1.3em 3em;
-  margin: 2%;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+.mediaSala {
+  border-radius: 10px;
+  padding: 1em 3em;
+  font-size: 15px;
   font-weight: 500;
   color: #fff;
-  background-color: #c42323;
+  background-color: red;
   border: none;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.267);
   cursor: pointer;
   outline: none;
+}
+
+@media (max-width: 700px) {
+  #buttons {
+    width: 80vw;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .mediaSala {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+    margin-bottom: 2%;
+  }
+
+  button:hover {
+    transform: none;
+  }
 }
