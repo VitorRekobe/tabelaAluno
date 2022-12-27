@@ -8,10 +8,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body ::-webkit-scrollbar {
-  width: 0px;
-}
-
 #overflow {
   overflow-x: auto;
 }
@@ -105,6 +101,10 @@ button:active {
 }
 
 @media (max-width: 700px) {
+    #overflow {
+    margin: 20px 20px 20px 20px;
+  }
+  
   #buttons {
     width: 80vw;
     flex-direction: column;
