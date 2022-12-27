@@ -3,7 +3,7 @@ projeto desenvolvido no Senai Suiço Brasileiro
 <br>
 Link do Git Pages, caso queira testa-lo: https://vitorrekobe.github.io/tabelaAluno/
 <br><br>
-![image](https://user-images.githubusercontent.com/98287250/201530818-e8f068f3-ac2c-4226-ade3-88b55d5e51bd.png)
+![image](https://user-images.githubusercontent.com/98287250/209709915-ee71f68f-5a3e-4249-9fdd-29c8c5f1e63d.png)
 
 ## Como o proprio nome diz é uma tabela referente a alunos, então o que ela faz? 
 1- Faz a média de cada alunos;
